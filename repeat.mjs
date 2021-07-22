@@ -18,7 +18,7 @@ export function repeat(func, times, ...args) {
   times = Math.floor(times); //At this point we now know we are working with an integer
 
   for (let i = 0; i < times; i++) {
-    func(...args); 
+    func(...args);
   }
 }
 
@@ -31,5 +31,3 @@ export function repeat(func, times, ...args) {
 export function t(func, times, ...args) {
   repeat(func, times, ...args);
 }
-
-export { repeat, t };
